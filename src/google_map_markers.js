@@ -42,7 +42,7 @@ export default class GoogleMapMarkers extends Component {
   constructor(props) {
     super(props);
     this.props.dispatcher.on('kON_CHANGE', this._onChangeHandler);
-    this.props.dispatcher.on('kON_MOUSE_POSITION_CHANGE', this._onMouseChangeHandler);
+    //this.props.dispatcher.on('kON_MOUSE_POSITION_CHANGE', this._onMouseChangeHandler);
     this.props.dispatcher.on('kON_CLICK', this._onChildClick);
     this.props.dispatcher.on('kON_MDOWN', this._onChildMouseDown);
 
@@ -58,7 +58,7 @@ export default class GoogleMapMarkers extends Component {
 
   componentWillUnmount() {
     this.props.dispatcher.removeListener('kON_CHANGE', this._onChangeHandler);
-    this.props.dispatcher.removeListener('kON_MOUSE_POSITION_CHANGE', this._onMouseChangeHandler);
+    //this.props.dispatcher.removeListener('kON_MOUSE_POSITION_CHANGE', this._onMouseChangeHandler);
     this.props.dispatcher.removeListener('kON_CLICK', this._onChildClick);
     this.props.dispatcher.removeListener('kON_MDOWN', this._onChildMouseDown);
 
