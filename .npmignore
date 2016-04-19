@@ -1,6 +1,4 @@
-src
 scripts
 __tests__
 examples
-.babelrc
 .eslintrc
