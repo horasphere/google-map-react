@@ -1,4 +1,6 @@
-import React, {PropTypes, Component} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+
 import { isReact14 } from './utils/react_version';
 
 import shouldPureComponentUpdate from 'react-pure-render/function';

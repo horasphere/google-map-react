@@ -1,7 +1,9 @@
 import './utils/jsdomInit.js';
 
 const React = require('react');
-const { PropTypes, Component } = React;
+const {Component } = React;
+const PropTypes = require('prop-types');
+
 const expect = require('expect');
 
 const TestUtils = require('react-addons-test-utils');
