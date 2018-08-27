@@ -28,7 +28,6 @@ import isArraysEqualEps from './utils/isArraysEqualEps';
 import detectElementResize from './utils/detectElementResize';
 
 // consts
-import ReactDOM from 'react-dom';
 const kEPS = 0.00001;
 const K_GOOGLE_TILE_SIZE = 256;
 // real minZoom calculated here _getMinZoom
