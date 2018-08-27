@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 const style = {
   width: '100%',
@@ -11,17 +11,12 @@ const style = {
 };
 
 export default class GoogleMapMap extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   shouldComponentUpdate() {
     return false; // disable react on this div
   }
 
   render() {
-    return (
-      <div style={style} />
-    );
+    const { registerChild } = this.props;
+    return <div ref={registerChild} style={style} />;
   }
 }

@@ -1,7 +1,7 @@
-import { wrap } from './wrap.js';
+import { wrap } from './wrap';
 
 export default class LatLng {
-  static convert = (a) => {
+  static convert = a => {
     if (a instanceof LatLng) {
       return a;
     }
@@ -15,11 +15,11 @@ export default class LatLng {
     }
 
     return a;
-  }
+  };
 
   constructor(lat, lng) {
     if (isNaN(lat) || isNaN(lng)) {
-      throw new Error('Invalid LatLng object: (' + lat + ', ' + lng + ')');
+      throw new Error(`Invalid LatLng object: (${lat}, ${lng})`);
     }
     this.lat = +lat;
     this.lng = +lng;

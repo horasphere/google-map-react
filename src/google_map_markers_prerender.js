@@ -1,5 +1,5 @@
-import React, {/* PropTypes, */ Component} from 'react';
-import GoogleMapMarkers from './google_map_markers.js';
+import React from 'react';
+import GoogleMapMarkers from './google_map_markers';
 
 const style = {
   width: '50%',
@@ -13,17 +13,10 @@ const style = {
   // opacity: 0.3
 };
 
-export default class GoogleMapMarkersPrerender extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-
-  render() {
-    return (
-      <div style={style}>
-        <GoogleMapMarkers {...this.props} />
-      </div>
-    );
-  }
+export default function(props) {
+  return (
+    <div style={style}>
+      <GoogleMapMarkers {...props} prerender />
+    </div>
+  );
 }
